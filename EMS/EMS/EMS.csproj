@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comp off.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comp off.Designer.cs">
+      <DependentUpon>comp off.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry.Designer.cs">
+      <DependentUpon>Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leave.Designer.cs">
+      <DependentUpon>leave.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -60,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>

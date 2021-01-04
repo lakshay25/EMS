@@ -8,3 +8,4 @@ D:\EMS\EMS\EMS\obj\Debug\EMS.csproj.GenerateResource.cache
 D:\EMS\EMS\EMS\obj\Debug\EMS.csproj.CoreCompileInputs.cache
 D:\EMS\EMS\EMS\obj\Debug\EMS.exe
 D:\EMS\EMS\EMS\obj\Debug\EMS.pdb
+D:\EMS\EMS\EMS\obj\Debug\EMS.Dashboard.resources

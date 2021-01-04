@@ -16,5 +16,26 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void btn_Entry_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Entry Entry = new Entry();
+            Entry.Show();
+        }
+
+        private void btn_leave_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            leave leave = new leave();
+            leave.Show();
+        }
+
+        private void btn_compoff_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            comp_off comp_Off = new comp_off();
+            comp_Off.Show();
+        }
     }
 }
