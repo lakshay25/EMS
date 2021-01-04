@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class Login : Form
+    public partial class Dashboard : Form
     {
-        public Login()
+        public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void btn_Login_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Cancel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
         }
     }
 }
