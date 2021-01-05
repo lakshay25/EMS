@@ -37,5 +37,13 @@ namespace EMS
             comp_off comp_Off = new comp_off();
             comp_Off.Show();
         }
+
+        private void btn_Emplyoee_Click(object sender, EventArgs e)
+        {
+            EmployeeRegistration employeeRegistration = new EmployeeRegistration();
+            employeeRegistration.Show();
+            this.Close();
+
+        }
     }
 }
