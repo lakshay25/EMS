@@ -47,12 +47,18 @@ namespace EMS
             this.lbl_EMPLOYEEREGISTRATION = new System.Windows.Forms.Label();
             this.cbx_Gender = new System.Windows.Forms.ComboBox();
             this.lbl_DOB = new System.Windows.Forms.Label();
-            this.maskedTxtbox_MobileNo = new System.Windows.Forms.MaskedTextBox();
-            this.dateTimePicker_DOB = new System.Windows.Forms.DateTimePicker();
+            this.mtb_MobileNo = new System.Windows.Forms.MaskedTextBox();
+            this.dtp_DOB = new System.Windows.Forms.DateTimePicker();
             this.btn_Submit = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.pictureBox_picture = new System.Windows.Forms.PictureBox();
             this.btn_Browse = new System.Windows.Forms.Button();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.txt_Address = new System.Windows.Forms.TextBox();
+            this.lbl_designation = new System.Windows.Forms.Label();
+            this.txt_designation = new System.Windows.Forms.TextBox();
+            this.cbx_usertype = new System.Windows.Forms.ComboBox();
+            this.lbl_usertype = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +87,7 @@ namespace EMS
             this.txt_FirstName.Location = new System.Drawing.Point(225, 134);
             this.txt_FirstName.Name = "txt_FirstName";
             this.txt_FirstName.Size = new System.Drawing.Size(196, 20);
-            this.txt_FirstName.TabIndex = 2;
+            this.txt_FirstName.TabIndex = 1;
             // 
             // lbl_FirstName
             // 
@@ -98,7 +104,7 @@ namespace EMS
             this.txt_LastName.Location = new System.Drawing.Point(225, 177);
             this.txt_LastName.Name = "txt_LastName";
             this.txt_LastName.Size = new System.Drawing.Size(196, 20);
-            this.txt_LastName.TabIndex = 4;
+            this.txt_LastName.TabIndex = 2;
             // 
             // lbl_LastName
             // 
@@ -112,16 +118,16 @@ namespace EMS
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(225, 309);
+            this.txt_Email.Location = new System.Drawing.Point(225, 418);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(196, 20);
-            this.txt_Email.TabIndex = 6;
+            this.txt_Email.TabIndex = 8;
             // 
             // lbl_Email
             // 
             this.lbl_Email.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Email.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_Email.Location = new System.Drawing.Point(7, 306);
+            this.lbl_Email.Location = new System.Drawing.Point(5, 415);
             this.lbl_Email.Name = "lbl_Email";
             this.lbl_Email.Size = new System.Drawing.Size(110, 23);
             this.lbl_Email.TabIndex = 7;
@@ -129,17 +135,17 @@ namespace EMS
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(225, 388);
+            this.txt_Password.Location = new System.Drawing.Point(225, 499);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(196, 20);
-            this.txt_Password.TabIndex = 8;
+            this.txt_Password.TabIndex = 10;
             // 
             // lbl_Password
             // 
             this.lbl_Password.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_Password.Location = new System.Drawing.Point(3, 384);
+            this.lbl_Password.Location = new System.Drawing.Point(4, 496);
             this.lbl_Password.Name = "lbl_Password";
             this.lbl_Password.Size = new System.Drawing.Size(109, 23);
             this.lbl_Password.TabIndex = 9;
@@ -147,17 +153,17 @@ namespace EMS
             // 
             // txt_ConfirmPassword
             // 
-            this.txt_ConfirmPassword.Location = new System.Drawing.Point(225, 430);
+            this.txt_ConfirmPassword.Location = new System.Drawing.Point(225, 538);
             this.txt_ConfirmPassword.Name = "txt_ConfirmPassword";
             this.txt_ConfirmPassword.PasswordChar = '*';
             this.txt_ConfirmPassword.Size = new System.Drawing.Size(196, 20);
-            this.txt_ConfirmPassword.TabIndex = 10;
+            this.txt_ConfirmPassword.TabIndex = 11;
             // 
             // lbl_ConfirmPassword
             // 
             this.lbl_ConfirmPassword.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ConfirmPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_ConfirmPassword.Location = new System.Drawing.Point(3, 427);
+            this.lbl_ConfirmPassword.Location = new System.Drawing.Point(2, 535);
             this.lbl_ConfirmPassword.Name = "lbl_ConfirmPassword";
             this.lbl_ConfirmPassword.Size = new System.Drawing.Size(182, 23);
             this.lbl_ConfirmPassword.TabIndex = 11;
@@ -167,7 +173,7 @@ namespace EMS
             // 
             this.lbl_Gender.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Gender.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_Gender.Location = new System.Drawing.Point(7, 262);
+            this.lbl_Gender.Location = new System.Drawing.Point(5, 299);
             this.lbl_Gender.Name = "lbl_Gender";
             this.lbl_Gender.Size = new System.Drawing.Size(105, 23);
             this.lbl_Gender.TabIndex = 13;
@@ -177,7 +183,7 @@ namespace EMS
             // 
             this.lbl_MobileNo.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_MobileNo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_MobileNo.Location = new System.Drawing.Point(3, 346);
+            this.lbl_MobileNo.Location = new System.Drawing.Point(5, 455);
             this.lbl_MobileNo.Name = "lbl_MobileNo";
             this.lbl_MobileNo.Size = new System.Drawing.Size(109, 23);
             this.lbl_MobileNo.TabIndex = 15;
@@ -187,7 +193,7 @@ namespace EMS
             // 
             this.lbl_EMPLOYEEREGISTRATION.Font = new System.Drawing.Font("Rockwell", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_EMPLOYEEREGISTRATION.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_EMPLOYEEREGISTRATION.Location = new System.Drawing.Point(123, 9);
+            this.lbl_EMPLOYEEREGISTRATION.Location = new System.Drawing.Point(77, 9);
             this.lbl_EMPLOYEEREGISTRATION.Name = "lbl_EMPLOYEEREGISTRATION";
             this.lbl_EMPLOYEEREGISTRATION.Size = new System.Drawing.Size(529, 52);
             this.lbl_EMPLOYEEREGISTRATION.TabIndex = 16;
@@ -200,10 +206,10 @@ namespace EMS
             "Male",
             "Female",
             "Other"});
-            this.cbx_Gender.Location = new System.Drawing.Point(225, 264);
+            this.cbx_Gender.Location = new System.Drawing.Point(225, 299);
             this.cbx_Gender.Name = "cbx_Gender";
             this.cbx_Gender.Size = new System.Drawing.Size(196, 21);
-            this.cbx_Gender.TabIndex = 17;
+            this.cbx_Gender.TabIndex = 5;
             // 
             // lbl_DOB
             // 
@@ -215,31 +221,31 @@ namespace EMS
             this.lbl_DOB.TabIndex = 18;
             this.lbl_DOB.Text = "DOB";
             // 
-            // maskedTxtbox_MobileNo
+            // mtb_MobileNo
             // 
-            this.maskedTxtbox_MobileNo.Location = new System.Drawing.Point(225, 350);
-            this.maskedTxtbox_MobileNo.Mask = "(+99) 00000-00000";
-            this.maskedTxtbox_MobileNo.Name = "maskedTxtbox_MobileNo";
-            this.maskedTxtbox_MobileNo.Size = new System.Drawing.Size(196, 20);
-            this.maskedTxtbox_MobileNo.TabIndex = 19;
+            this.mtb_MobileNo.Location = new System.Drawing.Point(225, 458);
+            this.mtb_MobileNo.Mask = "(+99) 00000-00000";
+            this.mtb_MobileNo.Name = "mtb_MobileNo";
+            this.mtb_MobileNo.Size = new System.Drawing.Size(196, 20);
+            this.mtb_MobileNo.TabIndex = 9;
             // 
-            // dateTimePicker_DOB
+            // dtp_DOB
             // 
-            this.dateTimePicker_DOB.CustomFormat = "dd-MM-yyy";
-            this.dateTimePicker_DOB.Location = new System.Drawing.Point(225, 221);
-            this.dateTimePicker_DOB.Name = "dateTimePicker_DOB";
-            this.dateTimePicker_DOB.Size = new System.Drawing.Size(196, 20);
-            this.dateTimePicker_DOB.TabIndex = 20;
+            this.dtp_DOB.CustomFormat = "dd-MM-yyy";
+            this.dtp_DOB.Location = new System.Drawing.Point(225, 221);
+            this.dtp_DOB.Name = "dtp_DOB";
+            this.dtp_DOB.Size = new System.Drawing.Size(196, 20);
+            this.dtp_DOB.TabIndex = 3;
             // 
             // btn_Submit
             // 
             this.btn_Submit.BackColor = System.Drawing.Color.MidnightBlue;
             this.btn_Submit.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Submit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Submit.Location = new System.Drawing.Point(219, 473);
+            this.btn_Submit.Location = new System.Drawing.Point(225, 580);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(87, 41);
-            this.btn_Submit.TabIndex = 21;
+            this.btn_Submit.TabIndex = 12;
             this.btn_Submit.Text = "Submit";
             this.btn_Submit.UseVisualStyleBackColor = false;
             this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
@@ -249,10 +255,10 @@ namespace EMS
             this.btn_Cancel.BackColor = System.Drawing.Color.MidnightBlue;
             this.btn_Cancel.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Cancel.Location = new System.Drawing.Point(340, 473);
+            this.btn_Cancel.Location = new System.Drawing.Point(335, 580);
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(86, 41);
-            this.btn_Cancel.TabIndex = 22;
+            this.btn_Cancel.Size = new System.Drawing.Size(87, 41);
+            this.btn_Cancel.TabIndex = 13;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             // 
@@ -261,9 +267,9 @@ namespace EMS
             this.pictureBox_picture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_picture.BackgroundImage")));
             this.pictureBox_picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox_picture.Location = new System.Drawing.Point(521, 90);
+            this.pictureBox_picture.Location = new System.Drawing.Point(537, 157);
             this.pictureBox_picture.Name = "pictureBox_picture";
-            this.pictureBox_picture.Size = new System.Drawing.Size(131, 151);
+            this.pictureBox_picture.Size = new System.Drawing.Size(138, 168);
             this.pictureBox_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_picture.TabIndex = 23;
             this.pictureBox_picture.TabStop = false;
@@ -273,26 +279,88 @@ namespace EMS
             this.btn_Browse.BackColor = System.Drawing.Color.MidnightBlue;
             this.btn_Browse.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Browse.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Browse.Location = new System.Drawing.Point(533, 262);
+            this.btn_Browse.Location = new System.Drawing.Point(557, 360);
             this.btn_Browse.Name = "btn_Browse";
             this.btn_Browse.Size = new System.Drawing.Size(106, 39);
-            this.btn_Browse.TabIndex = 24;
+            this.btn_Browse.TabIndex = 14;
             this.btn_Browse.Text = "Browse";
             this.btn_Browse.UseVisualStyleBackColor = false;
             this.btn_Browse.Click += new System.EventHandler(this.btn_Browse_Click);
+            // 
+            // lbl_address
+            // 
+            this.lbl_address.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_address.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_address.Location = new System.Drawing.Point(5, 340);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(158, 23);
+            this.lbl_address.TabIndex = 0;
+            this.lbl_address.Text = "Address";
+            // 
+            // txt_Address
+            // 
+            this.txt_Address.Location = new System.Drawing.Point(225, 340);
+            this.txt_Address.Name = "txt_Address";
+            this.txt_Address.Size = new System.Drawing.Size(196, 20);
+            this.txt_Address.TabIndex = 6;
+            // 
+            // lbl_designation
+            // 
+            this.lbl_designation.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_designation.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_designation.Location = new System.Drawing.Point(4, 261);
+            this.lbl_designation.Name = "lbl_designation";
+            this.lbl_designation.Size = new System.Drawing.Size(126, 23);
+            this.lbl_designation.TabIndex = 25;
+            this.lbl_designation.Text = "Designation";
+            // 
+            // txt_designation
+            // 
+            this.txt_designation.Location = new System.Drawing.Point(225, 261);
+            this.txt_designation.Name = "txt_designation";
+            this.txt_designation.Size = new System.Drawing.Size(196, 20);
+            this.txt_designation.TabIndex = 4;
+            // 
+            // cbx_usertype
+            // 
+            this.cbx_usertype.FormattingEnabled = true;
+            this.cbx_usertype.Items.AddRange(new object[] {
+            "Admin",
+            "HR",
+            "Employee"});
+            this.cbx_usertype.Location = new System.Drawing.Point(225, 378);
+            this.cbx_usertype.Name = "cbx_usertype";
+            this.cbx_usertype.Size = new System.Drawing.Size(196, 21);
+            this.cbx_usertype.TabIndex = 7;
+            // 
+            // lbl_usertype
+            // 
+            this.lbl_usertype.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_usertype.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_usertype.Location = new System.Drawing.Point(2, 378);
+            this.lbl_usertype.Name = "lbl_usertype";
+            this.lbl_usertype.Size = new System.Drawing.Size(100, 23);
+            this.lbl_usertype.TabIndex = 27;
+            this.lbl_usertype.Text = "UserType";
             // 
             // EmployeeRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(754, 550);
+            this.ClientSize = new System.Drawing.Size(783, 624);
+            this.Controls.Add(this.lbl_usertype);
+            this.Controls.Add(this.cbx_usertype);
+            this.Controls.Add(this.txt_designation);
+            this.Controls.Add(this.lbl_designation);
+            this.Controls.Add(this.txt_Address);
+            this.Controls.Add(this.lbl_address);
             this.Controls.Add(this.btn_Browse);
             this.Controls.Add(this.pictureBox_picture);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Submit);
-            this.Controls.Add(this.dateTimePicker_DOB);
-            this.Controls.Add(this.maskedTxtbox_MobileNo);
+            this.Controls.Add(this.dtp_DOB);
+            this.Controls.Add(this.mtb_MobileNo);
             this.Controls.Add(this.lbl_DOB);
             this.Controls.Add(this.cbx_Gender);
             this.Controls.Add(this.lbl_EMPLOYEEREGISTRATION);
@@ -312,6 +380,7 @@ namespace EMS
             this.Controls.Add(this.txt_EmployeeId);
             this.Name = "EmployeeRegistration";
             this.Text = "EmployeeRegistration";
+            this.Load += new System.EventHandler(this.EmployeeRegistration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -337,11 +406,17 @@ namespace EMS
         private System.Windows.Forms.Label lbl_EMPLOYEEREGISTRATION;
         private System.Windows.Forms.ComboBox cbx_Gender;
         private System.Windows.Forms.Label lbl_DOB;
-        private System.Windows.Forms.MaskedTextBox maskedTxtbox_MobileNo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_DOB;
+        private System.Windows.Forms.MaskedTextBox mtb_MobileNo;
+        private System.Windows.Forms.DateTimePicker dtp_DOB;
         private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.PictureBox pictureBox_picture;
         private System.Windows.Forms.Button btn_Browse;
+        private System.Windows.Forms.Label lbl_address;
+        private System.Windows.Forms.TextBox txt_Address;
+        private System.Windows.Forms.Label lbl_designation;
+        private System.Windows.Forms.TextBox txt_designation;
+        private System.Windows.Forms.ComboBox cbx_usertype;
+        private System.Windows.Forms.Label lbl_usertype;
     }
 }
