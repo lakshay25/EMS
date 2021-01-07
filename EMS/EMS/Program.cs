@@ -17,7 +17,7 @@ namespace EMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeRegistration());
+            Application.Run(new Login());
         }
     }
 }

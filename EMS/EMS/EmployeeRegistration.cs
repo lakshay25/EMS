@@ -90,28 +90,44 @@ namespace EMS
                                                     }
                                                     else
                                                     {
+                                                        //if (string.IsNullOrEmpty(open.ImageLocation))
+                                                        //{
+                                                        //    MessageBox.Show("please insert photo");
+                                                        //}
+
                                                         // db query insert
                                                         string query = "";
                                                         //  SqlDataAdapter da = new SqlDataAdapter(query, connection);
 
                                                         // DataSet dataset = new DataSet();
                                                         // da.Fill(dataset);
+                                                        
+                                                        using (SqlCommand sqlCmd = new SqlCommand { CommandText = "INSERT INTO [TB_Users] ([EmployeeId],[FirstName],[LastName],[DateOfBirth],[Address],[MobileNumber],[Designation],[Usertype],[EMail]) VALUES (@EmployeeId,@FirstName,@LastName,@DateOfBirth,@Address,@MobileNumber,@Designation,@UserType,@Email)", Connection = connection })
+                                                        {
 
-                                                        SqlCommand cmd = new SqlCommand("sp_insert", connection);
-                                                        cmd.CommandType = CommandType.StoredProcedure;
-                                                        cmd.Parameters.AddWithValue("@EmployeeId", txt_EmployeeId.Text);
-                                                        cmd.Parameters.AddWithValue("@First Name", txt_FirstName.Text);
-                                                        cmd.Parameters.AddWithValue("@Last Name", txt_LastName.Text);
-                                                        cmd.Parameters.AddWithValue("@DateOfBirth", dtp_DOB.Value);
-                                                        cmd.Parameters.AddWithValue("@gender", cbx_Gender.SelectedItem);
-                                                        cmd.Parameters.AddWithValue("@Email", txt_Email.Text);
-                                                        cmd.Parameters.AddWithValue("@Mobile No", mtb_MobileNo.Text);
-                                                        cmd.Parameters.AddWithValue("@designation", txt_designation.Text);
-                                                        cmd.Parameters.AddWithValue("@Address", txt_Address.Text);
-                                                        cmd.Parameters.AddWithValue("@usertype", cbx_usertype.SelectedItem);
+                                                            DateTime dt = dtp_DOB.Value;
+                                                            
+                                                            sqlCmd.Parameters.AddWithValue("@EmployeeId", txt_EmployeeId.Text);
+                                                            sqlCmd.Parameters.AddWithValue("@FirstName", txt_FirstName.Text);
+                                                            sqlCmd.Parameters.AddWithValue("@LastName", txt_LastName.Text);
+                                                            sqlCmd.Parameters.AddWithValue("@DateOfBirth", dt.ToString());
+                                                            sqlCmd.Parameters.AddWithValue("@Address", txt_Address.Text);
+                                                            sqlCmd.Parameters.AddWithValue("@MobileNumber", mtb_MobileNo.Text);
+                                                            //sqlCmd.Parameters.AddWithValue("@Photo", pictureBox_picture.ImageLocation);
+                                                            sqlCmd.Parameters.AddWithValue("@Designation", txt_designation.Text);
+                                                            sqlCmd.Parameters.AddWithValue("@UserType", cbx_usertype.SelectedItem);
+                                                            sqlCmd.Parameters.AddWithValue("@Email", txt_Email.Text);
+
+                                                                
+
+                                                            sqlCmd.ExecuteNonQuery();
+                                                        }
+
+                                                        MessageBox.Show("Employee data Register Sucessfully");
+
                                                     }
 
-                                                }
+                                                }   
                                             }
                                         }
                                     }
@@ -142,6 +158,17 @@ namespace EMS
 
         }
 
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            
+            
+           Dashboard Dashboard= new Dashboard();           
+            Dashboard.Show();
+            this.Close();
 
+                
+
+            
+        }
     }
 }

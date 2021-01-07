@@ -78,9 +78,10 @@ namespace EMS
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Snow;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(208, 2);
+            this.label1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(198, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(545, 39);
             this.label1.TabIndex = 3;

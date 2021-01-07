@@ -261,13 +261,14 @@ namespace EMS
             this.btn_Cancel.TabIndex = 13;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = false;
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // pictureBox_picture
             // 
             this.pictureBox_picture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_picture.BackgroundImage")));
             this.pictureBox_picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox_picture.Location = new System.Drawing.Point(537, 157);
+            this.pictureBox_picture.Location = new System.Drawing.Point(545, 90);
             this.pictureBox_picture.Name = "pictureBox_picture";
             this.pictureBox_picture.Size = new System.Drawing.Size(138, 168);
             this.pictureBox_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -279,7 +280,7 @@ namespace EMS
             this.btn_Browse.BackColor = System.Drawing.Color.MidnightBlue;
             this.btn_Browse.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Browse.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Browse.Location = new System.Drawing.Point(557, 360);
+            this.btn_Browse.Location = new System.Drawing.Point(562, 283);
             this.btn_Browse.Name = "btn_Browse";
             this.btn_Browse.Size = new System.Drawing.Size(106, 39);
             this.btn_Browse.TabIndex = 14;
