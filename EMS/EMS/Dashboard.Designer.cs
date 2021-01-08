@@ -36,6 +36,7 @@ namespace EMS
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Emplyoee = new System.Windows.Forms.Button();
+            this.btn_SearchEmployee = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@ namespace EMS
             this.label1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Font = new System.Drawing.Font("Rockwell", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(198, 19);
+            this.label1.Location = new System.Drawing.Point(198, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(545, 39);
             this.label1.TabIndex = 3;
@@ -91,9 +92,9 @@ namespace EMS
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(162, 176);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -109,12 +110,25 @@ namespace EMS
             this.btn_Emplyoee.UseVisualStyleBackColor = false;
             this.btn_Emplyoee.Click += new System.EventHandler(this.btn_Emplyoee_Click);
             // 
+            // btn_SearchEmployee
+            // 
+            this.btn_SearchEmployee.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_SearchEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SearchEmployee.Location = new System.Drawing.Point(167, 322);
+            this.btn_SearchEmployee.Name = "btn_SearchEmployee";
+            this.btn_SearchEmployee.Size = new System.Drawing.Size(107, 72);
+            this.btn_SearchEmployee.TabIndex = 6;
+            this.btn_SearchEmployee.Text = "Search Employee";
+            this.btn_SearchEmployee.UseVisualStyleBackColor = false;
+            this.btn_SearchEmployee.Click += new System.EventHandler(this.btn_SearchEmployee_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(755, 467);
+            this.Controls.Add(this.btn_SearchEmployee);
             this.Controls.Add(this.btn_Emplyoee);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -136,5 +150,6 @@ namespace EMS
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Emplyoee;
+        private System.Windows.Forms.Button btn_SearchEmployee;
     }
 }

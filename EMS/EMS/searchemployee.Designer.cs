@@ -1,7 +1,7 @@
 ﻿
 namespace EMS
 {
-    partial class comp_off
+    partial class searchemployee
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,10 @@ namespace EMS
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // comp_off
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "comp_off";
-            this.Text = "comp_off";
-            this.ResumeLayout(false);
-
+            this.Text = "searchemployee";
         }
 
         #endregion

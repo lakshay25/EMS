@@ -89,7 +89,7 @@ namespace EMS
                                                         MessageBox.Show("Password does not match");
                                                     }
                                                     else
-                                                    {
+                                                    {   
                                                         //if (string.IsNullOrEmpty(open.ImageLocation))
                                                         //{
                                                         //    MessageBox.Show("please insert photo");

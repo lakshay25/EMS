@@ -19,21 +19,21 @@ namespace EMS
 
         private void btn_Entry_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Entry Entry = new Entry();
             Entry.Show();
         }
 
         private void btn_leave_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             leave leave = new leave();
             leave.Show();
         }
 
         private void btn_compoff_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             comp_off comp_Off = new comp_off();
             comp_Off.Show();
         }
@@ -46,6 +46,14 @@ namespace EMS
 
         }
 
+        private void btn_SearchEmployee_Click(object sender, EventArgs e)
+        {
+            searchemployee searchemployee = new searchemployee();
+            searchemployee.Show();
+            this.Close();
+
+
+        }
 
     }
-}
+    }
