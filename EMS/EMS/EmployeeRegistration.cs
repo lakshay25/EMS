@@ -106,7 +106,7 @@ namespace EMS
                                                         {
 
                                                             DateTime dt = dtp_DOB.Value;
-                                                            
+
                                                             sqlCmd.Parameters.AddWithValue("@EmployeeId", txt_EmployeeId.Text);
                                                             sqlCmd.Parameters.AddWithValue("@FirstName", txt_FirstName.Text);
                                                             sqlCmd.Parameters.AddWithValue("@LastName", txt_LastName.Text);
@@ -145,7 +145,7 @@ namespace EMS
 
             if (open.ShowDialog() == DialogResult.OK)
             {
-                pictureBox_picture.Image = new Bitmap(open.FileName);
+                pictureBox_picture.Image = new Bitmap(open.FileName); 
 
             }
         }

@@ -16,5 +16,14 @@ namespace EMS
         {
             InitializeComponent();
         }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Close();
+
+
+        }
     }
 }
